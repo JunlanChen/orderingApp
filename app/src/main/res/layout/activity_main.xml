@@ -1,0 +1,146 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/pizzaHut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/store"
+        android:textSize="50sp"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button
+            android:id="@+id/pizzaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c1"/>
+        <Button
+            android:id="@+id/wingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c2"/>
+        <Button
+            android:id="@+id/drinksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c3"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/typeOfPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/typePepperoni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pepperoni" />
+
+                <RadioButton
+                    android:id="@+id/typeChicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chicken" />
+
+                <RadioButton
+                    android:id="@+id/typeBeef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beef" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/extraChesse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exCheese" />
+
+                <RadioButton
+                    android:id="@+id/normalCheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/norCheese" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RadioButton
+                    android:id="@+id/inch12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twelve" />
+
+                <RadioButton
+                    android:id="@+id/inch16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sixteen" />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/typeOfWings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/bbqWings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bbq"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buffaloWings"
+                    android:text="@string/buffalo"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/obeyWings"
+                    android:text="@string/obey"/>
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/wingSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/sixPieceWings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sixps"/>
+                <RadioButton
+                    android:id="@+id/twelvePieceWings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twelveps"/>
+
+            </RadioGroup>
+
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
