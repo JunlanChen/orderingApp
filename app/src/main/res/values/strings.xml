@@ -16,4 +16,11 @@
     <string name="obey">Obey Wings</string>
     <string name="sixps">6 Pieces</string>
     <string name="twelveps">12 Pieces</string>
+    <string name="coke">Coke</string>
+    <string name="sprite">Sprite</string>
+    <string name="orange">Orange</string>
+    <string name="small">Small</string>
+    <string name="large">Large</string>
+    <string name="submit">Submit</string>
+    <string name="currentPrice">0</string>
 </resources>

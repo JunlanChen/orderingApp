@@ -1,19 +1,24 @@
 <LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:id="@+id/pizzaHut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="@string/store"
         android:textSize="50sp"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/currentPrice"
+        android:textSize="50sp"/>
     <LinearLayout
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center"
         xmlns:android="http://schemas.android.com/apk/res/android">
         <Button
             android:id="@+id/pizzaButton"
@@ -30,11 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/c3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitButton"
+            android:text="@string/submit"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <RadioGroup
                 android:id="@+id/typeOfPizza"
@@ -70,16 +80,15 @@
                 android:visibility="invisible">
 
                 <RadioButton
-                    android:id="@+id/extraChesse"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/exCheese" />
-
-                <RadioButton
                     android:id="@+id/normalCheese"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/norCheese" />
+                <RadioButton
+                    android:id="@+id/extraChesse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exCheese" />
             </RadioGroup>
 
             <RadioGroup
@@ -101,44 +110,98 @@
                     android:layout_height="wrap_content"
                     android:text="@string/sixteen" />
             </RadioGroup>
+
             <RadioGroup
                 android:id="@+id/typeOfWings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="invisible">
+
                 <RadioButton
                     android:id="@+id/bbqWings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/bbq"/>
+                    android:text="@string/bbq" />
+
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/buffaloWings"
-                    android:text="@string/buffalo"/>
-                <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/buffalo" />
+
+                <RadioButton
                     android:id="@+id/obeyWings"
-                    android:text="@string/obey"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obey" />
             </RadioGroup>
+
             <RadioGroup
                 android:id="@+id/wingSize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="invisible">
+
                 <RadioButton
                     android:id="@+id/sixPieceWings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sixps"/>
+                    android:text="@string/sixps" />
+
                 <RadioButton
                     android:id="@+id/twelvePieceWings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/twelveps"/>
+                    android:text="@string/twelveps" />
 
             </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/soda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <RadioButton
+                        android:id="@+id/coke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coke" />
+
+                    <RadioButton
+                        android:id="@+id/sprite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sprite" />
+
+                    <RadioButton
+                        android:id="@+id/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orange" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/drinkSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <RadioButton
+                        android:id="@+id/small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small" />
+
+                    <RadioButton
+                        android:id="@+id/large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/large" />
+                </RadioGroup>
+
 
 
 </LinearLayout>
