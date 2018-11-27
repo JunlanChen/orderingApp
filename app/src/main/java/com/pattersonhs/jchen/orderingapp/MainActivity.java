@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
     RadioButton orange;
     RadioButton small;
     RadioButton large;
-
+    String currentPrice;
+    int intPrice;
+    int newIntPrice;
 
 
     @Override
@@ -87,6 +89,15 @@ public class MainActivity extends AppCompatActivity {
             typeOfPizza.setVisibility(View.VISIBLE);
             cheese.setVisibility(View.VISIBLE);
             size.setVisibility(View.VISIBLE);
+            typeOfWings.setVisibility(View.INVISIBLE);
+            wingSize.setVisibility(View.INVISIBLE);
+            soda.setVisibility(View.INVISIBLE);
+            drinkSize.setVisibility(View.INVISIBLE);
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 8;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
             }
         });
         wingsButton.setOnClickListener(new View.OnClickListener() {
@@ -94,6 +105,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 typeOfWings.setVisibility(View.VISIBLE);
                 wingSize.setVisibility(View.VISIBLE);
+                typeOfPizza.setVisibility(View.INVISIBLE);
+                cheese.setVisibility(View.INVISIBLE);
+                soda.setVisibility(View.INVISIBLE);
+                drinkSize.setVisibility(View.INVISIBLE);
+                size.setVisibility(View.INVISIBLE);
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 6;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
             }
         });
         drinksButton.setOnClickListener(new View.OnClickListener() {
@@ -101,12 +122,203 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 soda.setVisibility(View.VISIBLE);
                 drinkSize.setVisibility(View.VISIBLE);
+                typeOfPizza.setVisibility(View.INVISIBLE);
+                cheese.setVisibility(View.INVISIBLE);
+                size.setVisibility(View.INVISIBLE);
+                typeOfWings.setVisibility(View.INVISIBLE);
+                wingSize.setVisibility(View.INVISIBLE);
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 2;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
             }
         });
         typePepperoni.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                price.setText("6");
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 2;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        typeChicken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 3;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        typeBeef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 3;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        extraChesse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 2;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        normalCheese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        inch12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice ;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        inch16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 4;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        buffaloWings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        bbqWings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        obeyWings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        sixPieceWings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        twelvePieceWings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 6;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        orange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        sprite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice ;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        coke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice ;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        small.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
+            }
+        });
+        large.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentPrice = price.getText().toString();
+                intPrice = Integer.parseInt(currentPrice);
+                newIntPrice = intPrice + 1;
+                currentPrice = "" + newIntPrice;
+                price.setText(currentPrice);
+
             }
         });
     }
