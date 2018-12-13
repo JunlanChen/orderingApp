@@ -20,7 +20,8 @@
     <string name="sprite">Sprite</string>
     <string name="orange">Orange</string>
     <string name="small">Small + $0</string>
-    <string name="large">Large + %1</string>
+    <string name="large">Large + $1</string>
     <string name="submit">Submit</string>
     <string name="currentPrice">0</string>
+    <string name="send">Send</string>
 </resources>

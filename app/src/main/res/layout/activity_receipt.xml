@@ -1,0 +1,77 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/pizzaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c1"/>
+    <TextView
+        android:id="@+id/wingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c2"/>
+    <TextView
+        android:id="@+id/drinksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c3"/>
+    <TextView
+        android:id="@+id/typePepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pepperoni" />
+    <TextView
+        android:id="@+id/typeChicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken" />
+    <TextView
+        android:id="@+id/typeBeef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beef" />
+    <TextView
+        android:id="@+id/normalCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/norCheese" />
+    <TextView
+        android:id="@+id/extraCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exCheese" />
+    <TextView
+        android:id="@+id/inch12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twelve" />
+    <TextView
+        android:id="@+id/inch16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sixteen" />
+    <TextView
+        android:id="@+id/bbqWings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bbq" />
+    <TextView
+        android:id="@+id/buffaloWings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buffalo" />
+    <TextView
+        android:id="@+id/obeyWings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obey" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendButton"
+        android:text="@string/send"/>
+
+</LinearLayout>

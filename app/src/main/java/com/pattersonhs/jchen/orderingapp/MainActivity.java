@@ -1,5 +1,6 @@
 package com.pattersonhs.jchen.orderingapp;
 
+import android.content.Intent;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -319,6 +320,13 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = "" + newIntPrice;
                 price.setText(currentPrice);
 
+            }
+        });
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent receipt = new Intent(MainActivity.this,Receipt.class);
+                startActivity(receipt);
             }
         });
     }
