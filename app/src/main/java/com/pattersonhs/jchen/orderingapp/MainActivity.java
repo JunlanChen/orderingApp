@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
     RadioButton small;
     RadioButton large;
     String currentPrice;
-    int intPrice;
-    int newIntPrice;
+    double intPrice;
+    double newIntPrice;
 
 
     @Override
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 8;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice * 1.06 ;
                 price.setText(currentPrice);
             }
         });
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 6;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice * 1.06;
                 price.setText(currentPrice);
             }
         });
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 2;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice *1.06;
                 price.setText(currentPrice);
             }
         });
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 2;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 3;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 3;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 2;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 4;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 6;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity {
                 currentPrice = price.getText().toString();
                 intPrice = Integer.parseInt(currentPrice);
                 newIntPrice = intPrice + 1;
-                currentPrice = "" + newIntPrice;
+                currentPrice = "" + newIntPrice*1.06;
                 price.setText(currentPrice);
 
             }
